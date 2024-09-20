@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SitopAdventure</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="head">
+      <nav class="bg-third border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center bg- justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="img/sitop.png"
+              class="w-8 h-8 rounded-full"
+              alt="sitop adventure"
+            />
+            <span
+              class="self-center text-2xl text-second font-semibold whitespace-nowrap dark:text-white uppercase"
+              >Sitop Adventure</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden w-full mt-0.5 bg-third md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col bg-third p-4 md:p-0 mt-5 border border-blue-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricelist"
+                  class="block py-2 px-3 text-fourt rounded hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricelist</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#booking"
+                  class="block py-2 px-3 text-fourt rounded hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Booking</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testi"
+                  class="block py-2 px-3 text-fourt rounded hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Contact"
+                  class="block py-2 px-3 text-fourt rounded hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HERO -->
+    <section id="home" class="pt-30 pb-8 bg-back">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2 p-10">
+            <h6
+              class="text-4xl text-primary uppercase text-center font-bold tracking-widest mb-5"
+            >
+              Sitop Adventure
+            </h6>
+            <h1 class="text-white text-2xl capitalize font-semibold mb-2">
+              Rental outdoor terbaik soloraya
+            </h1>
+            <p class="text-slate-300 indent-10 md:indent-0 md:mb-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              dolores at harum molestiae qui voluptas magni inventore atque odit
+              totam aspernatur, quia pariatur natus laudantium vero quae culpa!
+              Suscipit, est reprehenderit et ipsa necessitatibus cumque magni
+              similique eaque, omnis assumenda ratione eveniet expedita, soluta
+              atque ducimus neque. Quasi, laudantium tempore!
+            </p>
+          </div>
+
+          <div
+            id="default-carousel"
+            class="relative w-full self-end lg:w-1/2 px-4 mb-2 md:mb-10"
+            data-carousel="slide"
+          >
+            <!-- Carousel wrapper -->
+            <div
+              class="relative h-64 overflow-hidden lg:w-5/6 mx-auto rounded-lg md:h-96"
+            >
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/car1.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:object-cover md:object-center"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/car2.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:object-cover md:object-center"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/car3.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:object-cover md:object-center"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/car4.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:object-cover md:object-center"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/car5.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:object-cover md:object-center"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div
+              class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+            >
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 4"
+                data-carousel-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 5"
+                data-carousel-slide-to="4"
+              ></button>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 start-0 z-30 items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hidden"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                  />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 end-0 z-30 items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hidden"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero end -->
+
+    <!-- OUR -->
+    <section id="about" class="bg-slate-300">
+      <div class="py-5 px-5 mx-auto mb-6">
+        <h1
+          class="text-lg md:text-4xl font-bold text-center uppercase tracking-widest"
+        >
+          welcome to
+          <span
+            class="bg-gradient-to-r from-primary to-second bg-clip-text text-transparent"
+          >
+            sitop adventure</span
+          >
+        </h1>
+      </div>
+
+      <div
+        class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between"
+      >
+        <div class="rounded-lg overflow-hidden mb-10 w-32 gap-10 mx-4 md:w-64">
+          <img
+            src="img/allPayment.png"
+            alt=""
+            class="w-full grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 cursor-pointer"
+          />
+          <div class="px-6 py-4">
+            <div class="font-semibold text-lg md:text-xl mb-2 text-center">
+              Pembayaran mudah
+            </div>
+          </div>
+        </div>
+        <div class="rounded-lg overflow-hidden mb-10 w-32 mx-4 gap-10 md:w-64">
+          <img
+            src="img/bestProduct.png"
+            alt=""
+            class="w-full grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 cursor-pointer"
+          />
+          <div class="px-6 py-4">
+            <div class="font-semibold text-lg md:text-xl mb-2">
+              Terbaik & Terlengkap
+            </div>
+          </div>
+        </div>
+        <div class="rounded-lg overflow-hidden mb-10 w-32 mx-4 gap-10 md:w-64">
+          <img
+            src="img/quickResponse.png"
+            alt=""
+            class="w-full grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 cursor-pointer"
+          />
+          <div class="px-6 py-4">
+            <div class="font-semibold text-lg md:text-xl text-center mb-2">
+              Respon Cepat
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our End -->
+
+    <!-- Pricelist -->
+    <section id="pricelist" class="bg-back2">
+      <div>
+        <div class="flex justify-center py-4">
+          <h1
+            class="text-center font-semibold text-xl md:text-4xl uppercase tracking-widest"
+          >
+            <u>Pricelist</u>
+          </h1>
+          <span
+            ><img
+              src="img/price-tag.png"
+              alt=""
+              class="w-7 scale-x-[-1] m-1 lg:w-12"
+          /></span>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto px-6 flex flex-wrap md:gap-6 justify-evenly"
+      >
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+        <div class="rounded-full mt-3 px-3">
+          <img
+            src="img/2.png"
+            alt=""
+            class="w-32 md:w-48 rounded-full hover:scale-110"
+          />
+
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center">Carrier</div>
+            <h2 class="text-sm text-center">Rp.10000</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricelist end -->
+
+    <!-- booking -->
+    <section id="booking" class="bg-back3 pb-4 px-3">
+      <div class="p-4 justify-center text-center flex">
+        <h1 class="uppercase text-xl md:text-4xl font-semibold tracking-widest">
+          <u>pemesanan</u>
+        </h1>
+        <span><img src="img/cart.png" class="w-7" alt="" /></span>
+      </div>
+
+      <form
+        class="max-w-sm mx-auto md:max-w-full"
+        action="https://script.google.com/macros/s/AKfycby6rfrc6j5l6lWB2U6GwIuzv99zdYbc8hFqtdY14Jt8Nrxh_zd4zj-NxfH4-8VpXt67/exec"
+        method="post"
+        id="my-form"
+      >
+        <div class="flex gap-3 justify-center px-1">
+          <div>
+            <label
+              for="nama"
+              class="block mb-2 text-sm md:text-lg md:mb-3 font-medium text-gray-900 dark:text-white"
+              >Nama</label
+            >
+            <input
+              type="text"
+              id="nama"
+              class="block w-full p-2 md:w-64 md:h-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              name="nama"
+            />
+          </div>
+          <div>
+            <label
+              for="ambil"
+              class="block mb-2 text-sm md:text-lg md:mb-3 font-medium text-gray-900 dark:text-white"
+              >Pengambilan</label
+            >
+            <input
+              type="date"
+              id="ambil"
+              class="block w-full p-2 md:w-64 md:h-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs md:text-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              name="ambil"
+            />
+          </div>
+          <div>
+            <label
+              for="balik"
+              class="block mb-2 text-sm md:text-lg md:mb-3 font-medium text-gray-900 dark:text-white"
+              >Pengembalian</label
+            >
+            <input
+              type="date"
+              id="balik"
+              class="block w-full p-2 md:w-64 md:h-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs md:text-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              name="balik"
+            />
+          </div>
+        </div>
+        <hr class="mt-3 font-bold border-t-4" />
+        <div class="px-2">
+          <div class="mt-3 p-2 justify-center">
+            <div class="flex gap-5 justify-center">
+              <label
+                for="barang1"
+                class="text-lg font-medium text-gray-900 dark:text-white"
+              >
+                Barang</label
+              >
+              <select
+                id="barang1"
+                class="bg-gray-50 border w-48 h-10 items-center border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="barang1"
+              >
+                <option value="topi/5000">Topi Rimba</option>
+                <option value="telur/5000">Wadah Telur</option>
+                <option value="cangkir/8000">Cangkir(4pcs)</option>
+                <option value="gas/8000">Gas(Refill)</option>
+                <option value="SB/10000">Sleeping Bag</option>
+                <option value="TP/10000">Trecking Pool</option>
+                <option value="lamputent/1000">Lampu tenda</option>
+                <option value="cooking/12000">Cooking Set</option>
+                <option value="kompor/10000">Kompor</option>
+                <option value="jaket/15000">Jaket</option>
+                <option value="Fs/15000">Flysheet</option>
+                <option value="Carrier/20000">Tas Carrier</option>
+                <option value="tenda/30000">Tenda Kap 4-5</option>
+              </select>
+              <label
+                for="jumlah1"
+                class="block text-lg font-medium text-gray-900 dark:text-white"
+                >jumlah</label
+              >
+              <input
+                id="jumlah1"
+                type="number"
+                class="bg-gray-50 border w-11 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="jumlah1"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="mt-3 p-2 justify-center">
+            <div class="flex gap-5 justify-center">
+              <label
+                for="barang2"
+                class="text-lg font-medium text-gray-900 dark:text-white"
+              >
+                Barang</label
+              >
+              <select
+                id="barang2"
+                class="bg-gray-50 border w-48 h-10 items-center border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="barang2"
+              >
+                <option value="topi/5000">Topi Rimba</option>
+                <option value="telur/5000">Wadah Telur</option>
+                <option value="cangkir/8000">Cangkir(4pcs)</option>
+                <option value="gas/8000">Gas(Refill)</option>
+                <option value="SB/10000">Sleeping Bag</option>
+                <option value="TP/10000">Trecking Pool</option>
+                <option value="lamputent/1000">Lampu tenda</option>
+                <option value="cooking/12000">Cooking Set</option>
+                <option value="kompor/10000">Kompor</option>
+                <option value="jaket/15000">Jaket</option>
+                <option value="Fs/15000">Flysheet</option>
+                <option value="Carrier/20000">Tas Carrier</option>
+                <option value="tenda/30000">Tenda Kap 4-5</option>
+              </select>
+              <label
+                for="jumlah2"
+                class="block text-lg font-medium text-gray-900 dark:text-white"
+                >jumlah</label
+              >
+              <input
+                id="jumlah2"
+                type="number"
+                class="bg-gray-50 border w-11 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="jumlah2"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="mt-3 p-2 justify-center">
+            <div class="flex gap-5 justify-center">
+              <label
+                for="barang3"
+                class="text-lg font-medium text-gray-900 dark:text-white"
+              >
+                Barang</label
+              >
+              <select
+                id="barang3"
+                class="bg-gray-50 border w-48 h-10 items-center border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="barang3"
+              >
+                <option value="topi/5000">Topi Rimba</option>
+                <option value="telur/5000">Wadah Telur</option>
+                <option value="cangkir/8000">Cangkir(4pcs)</option>
+                <option value="gas/8000">Gas(Refill)</option>
+                <option value="SB/10000">Sleeping Bag</option>
+                <option value="TP/10000">Trecking Pool</option>
+                <option value="lamputent/1000">Lampu tenda</option>
+                <option value="cooking/12000">Cooking Set</option>
+                <option value="kompor/10000">Kompor</option>
+                <option value="jaket/15000">Jaket</option>
+                <option value="Fs/15000">Flysheet</option>
+                <option value="Carrier/20000">Tas Carrier</option>
+                <option value="tenda/30000">Tenda Kap 4-5</option>
+              </select>
+              <label
+                for="jumlah3"
+                class="block text-lg font-medium text-gray-900 dark:text-white"
+                >jumlah</label
+              >
+              <input
+                id="jumlah3"
+                type="number"
+                class="bg-gray-50 border w-11 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="jumlah3"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="mt-3 p-2 justify-center">
+            <div class="flex gap-5 justify-center">
+              <label
+                for="barang4"
+                class="text-lg font-medium text-gray-900 dark:text-white"
+              >
+                Barang</label
+              >
+              <select
+                id="barang4"
+                class="bg-gray-50 border w-48 h-10 items-center border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="barang4"
+              >
+                <option value="topi/5000">Topi Rimba</option>
+                <option value="telur/5000">Wadah Telur</option>
+                <option value="cangkir/8000">Cangkir(4pcs)</option>
+                <option value="gas/8000">Gas(Refill)</option>
+                <option value="SB/10000">Sleeping Bag</option>
+                <option value="TP/10000">Trecking Pool</option>
+                <option value="lamputent/1000">Lampu tenda</option>
+                <option value="cooking/12000">Cooking Set</option>
+                <option value="kompor/10000">Kompor</option>
+                <option value="jaket/15000">Jaket</option>
+                <option value="Fs/15000">Flysheet</option>
+                <option value="Carrier/20000">Tas Carrier</option>
+                <option value="tenda/30000">Tenda Kap 4-5</option>
+              </select>
+              <label
+                for="jumlah4"
+                class="block text-lg font-medium text-gray-900 dark:text-white"
+                >jumlah</label
+              >
+              <input
+                id="jumlah4"
+                type="number"
+                class="bg-gray-50 border w-11 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="jumlah4"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="mt-3 p-2 justify-center">
+            <div class="flex gap-5 justify-center">
+              <label
+                for="barang5"
+                class="text-lg font-medium text-gray-900 dark:text-white"
+              >
+                Barang</label
+              >
+              <select
+                id="barang5"
+                class="bg-gray-50 border w-48 h-10 items-center border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="barang5"
+              >
+                <option value="topi/5000">Topi Rimba</option>
+                <option value="telur/5000">Wadah Telur</option>
+                <option value="cangkir/8000">Cangkir(4pcs)</option>
+                <option value="gas/8000">Gas(Refill)</option>
+                <option value="SB/10000">Sleeping Bag</option>
+                <option value="TP/10000">Trecking Pool</option>
+                <option value="lamputent/1000">Lampu tenda</option>
+                <option value="cooking/12000">Cooking Set</option>
+                <option value="kompor/10000">Kompor</option>
+                <option value="jaket/15000">Jaket</option>
+                <option value="Fs/15000">Flysheet</option>
+                <option value="Carrier/20000">Tas Carrier</option>
+                <option value="tenda/30000">Tenda Kap 4-5</option>
+              </select>
+              <label
+                for="jumlah5"
+                class="block text-lg font-medium text-gray-900 dark:text-white"
+                >jumlah</label
+              >
+              <input
+                id="jumlah5"
+                type="number"
+                class="bg-gray-50 border w-11 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="jumlah5"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            class="bg-second uppercase font-semibold p-1.5 mt-4 w-16 md:p-2 md:w-24 rounded-lg text-white hover:bg-white hover:text-second"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- booking end -->
+
+    <!-- response -->
+    <section id="testi">
+      <div
+        class="container max-w-full justify-center py-8 bg-back mx-auto px-3"
+      >
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+          (function () {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://dino-wedding-15.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+      </div>
+    </section>
+
+    <!-- response end -->
+
+    <!-- footer -->
+    <footer id="Contact" class="bg-purple-400 py-8">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 text-slate-300 font-medium lg:w-1/2">
+            <h2
+              class="font-bold text-3xl mb-5 uppercase bg-gradient-to-r from-primary to-second bg-clip-text text-transparent"
+            >
+              Sitop adventure
+            </h2>
+            <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+            <p>devotionfeedback@gmail.com</p>
+            <p>Tuban Kulon Gondangrejo Karanganyar</p>
+            <p>Jawa Tengah</p>
+            <div class="lg:w-1/2">
+              <iframe
+                class="mb-10 md:h-[500px] mt-5 lg:mt-16"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.471406437768!2d110.83133907500228!3d-7.523448992489518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a117d586e40c9%3A0xe930d54b6eded132!2sSiTop_Adventure%F0%9F%94%A5!5e0!3m2!1sid!2sid!4v1726194410338!5m2!1sid!2sid"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full pt-8 border-t border-slate-700">
+          <div class="flex items-center justify-center mb-5">
+            <!-- intsagram -->
+            <a
+              href="http://instagram.com/Luthfy.af"
+              target="blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                />
+              </svg>
+            </a>
+            <!-- Linkeind -->
+            <a
+              href=""
+              target="blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <!-- X -->
+            <a
+              href="http://x.com/alfahrez25"
+              target="blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>X</title>
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="font-medium text-sm text-slate-500 text-center">
+            @2024 Portfolio. All Right Reserved Design By
+            <a
+              href="http://instagram.com/luthfy.af"
+              target="blank"
+              class="font-bold text-primary"
+              >AlFahrez</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- Backtop start-->
+    <a
+      href="#head"
+      id="top"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary hover:animate-pulse p-4"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Backtop end -->
+
+    <!-- whatsapp -->
+    <a
+      href="http://instagram.com/Luthfy.af"
+      class="fixed bottom-24 md:bottom-24 right-4 z-[9999] md:w-16 md:h-full h-16 w-16 items-center justify-center rounded-full bg-primary hover:animate-pulse"
+      id="whatsapp"
+    >
+      <img src="img/social.png" class="block rounded-full w-full" alt="" />
+    </a>
+    <!-- whatsapp end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
